@@ -8,8 +8,8 @@
     :root {
       --accent: #a855ff;
       --accent-bright: #c47bff;
-      --frame: #1a002d;
-      --frame-glow: #3a006b;
+      --frame: #2b004d;
+      --frame-glow: #3b006d;
       --border: #b56dff;
       --shadow: rgba(168, 85, 255, 0.45);
       --bg-dark: #000000;
@@ -28,7 +28,6 @@
       align-items: center;
     }
 
-    /* Background particles */
     .bg {
       position: fixed;
       inset: 0;
@@ -58,7 +57,6 @@
       100% { opacity: 0.7; }
     }
 
-    /* Main Hub Frame */
     .hub {
       margin-top: 60px;
       width: 85%;
@@ -71,7 +69,6 @@
       overflow-y: auto;
     }
 
-    /* Search Row */
     .search-row {
       display: flex;
       gap: 20px;
@@ -106,14 +103,12 @@
       cursor: pointer;
     }
 
-    /* Game Grid */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
       gap: 24px;
     }
 
-    /* Game Card */
     .game {
       background: var(--frame-glow);
       border: 2px solid var(--accent);
