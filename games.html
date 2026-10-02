@@ -6,12 +6,12 @@
 
   <style>
     :root {
-      --accent: #a855ff;
-      --accent-bright: #c47bff;
-      --frame: #2b004d;
-      --frame-glow: #3b006d;
-      --border: #b56dff;
-      --shadow: rgba(168, 85, 255, 0.45);
+      --accent: #b300ff;            /* FULL bright purple */
+      --accent-bright: #d24dff;     /* neon glow purple */
+      --frame: #b300ff;             /* solid bright purple fill */
+      --frame-glow: #c94dff;        /* glowing purple interior */
+      --border: #d24dff;            /* neon border */
+      --shadow: rgba(210, 77, 255, 0.55); /* purple glow shadow */
       --bg-dark: #000000;
       --bg-purple: #2b004d;
     }
@@ -57,18 +57,20 @@
       100% { opacity: 0.7; }
     }
 
+    /* MAIN HUB FRAME — FULL PURPLE FILL */
     .hub {
       margin-top: 60px;
       width: 85%;
       height: calc(100vh - 120px);
       background: var(--frame);
-      border: 2px solid var(--accent);
-      box-shadow: 0 0 25px var(--accent-bright);
+      border: 3px solid var(--border);
+      box-shadow: 0 0 45px var(--accent-bright);
       border-radius: 18px;
       padding: 24px;
       overflow-y: auto;
     }
 
+    /* SEARCH + DROPDOWN — FULL PURPLE FILL */
     .search-row {
       display: flex;
       gap: 20px;
@@ -79,19 +81,19 @@
     .dropdown {
       padding: 14px;
       border-radius: 14px;
-      border: 2px solid var(--accent);
-      background: var(--frame-glow);
+      border: 3px solid var(--border);
+      background: var(--frame);
       color: white;
       font-size: 16px;
       outline: none;
-      box-shadow: 0 0 18px var(--accent-bright);
+      box-shadow: 0 0 35px var(--accent-bright);
       transition: transform 0.15s ease, box-shadow 0.15s ease;
     }
 
     .search:hover,
     .dropdown:hover {
       transform: translateY(-3px);
-      box-shadow: 0 0 28px var(--accent-bright);
+      box-shadow: 0 0 55px var(--accent-bright);
     }
 
     .search {
@@ -103,16 +105,18 @@
       cursor: pointer;
     }
 
+    /* GRID */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
       gap: 24px;
     }
 
+    /* GAME CARDS — FULL PURPLE FILL */
     .game {
-      background: var(--frame-glow);
-      border: 2px solid var(--accent);
-      box-shadow: 0 0 20px var(--accent-bright);
+      background: var(--frame);
+      border: 3px solid var(--border);
+      box-shadow: 0 0 35px var(--accent-bright);
       border-radius: 14px;
       padding: 12px;
       text-align: center;
@@ -126,7 +130,7 @@
 
     .game:hover {
       transform: translateY(-6px);
-      box-shadow: 0 0 30px var(--accent-bright);
+      box-shadow: 0 0 55px var(--accent-bright);
     }
 
     .game img {
@@ -135,8 +139,8 @@
       object-fit: cover;
       border-radius: 12px;
       margin-bottom: 12px;
-      border: 2px solid var(--accent);
-      box-shadow: 0 0 12px var(--accent-bright);
+      border: 3px solid var(--border);
+      box-shadow: 0 0 25px var(--accent-bright);
     }
   </style>
 </head>
@@ -260,4 +264,4 @@
   </script>
 
 </body>
-</html>
+  </html>
