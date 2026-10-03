@@ -1,6 +1,7 @@
-# ConvYH V2
+# 🎮ConvYH V2🎮
 **ConvYH** is an interactive school unblocker, in which is open source!
 
-We have a wide-ish range of games for you and people alike to play on!
+You may ask, why the copy of UniUB? UniUB has officially been disbanded, we at ConvYH have decided to make a new UniUB!
 
-As you know **UniUB V4** died, so we are attempting to revive it under a new creator and name!
+## 🤔WHY CHOOSE US?🤔
+We may not have the biggest game selections, but we aim for fast loading HTML5 games (eg. RetroBowl, Pac-Man, etc etc) and we are working on getting a fast browser! Any efforts to help this is GREATLY appreciated!
